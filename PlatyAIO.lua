@@ -291,6 +291,7 @@ end
 
 -- if spellname in spellNameTable is found, check menu if its ticked, cast corresponding spell
 function Annie:ProcessSpell(unit, spell)
+
 	if unit and spell then
 		for i = 0,3 do
 			if self.Config.AutoCast[str[i]][spell.name] then
